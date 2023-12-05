@@ -11,16 +11,17 @@ import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 public class Professor {
 
     @Id
+    @PartitionKey
     @GeneratedValue
     public String id;
-
-    @PartitionKey
+    
     public int matricula;
-
     public String disciplina;
     public String aula;
     public String formacao;
     public int grade;
+
+    public String alunoId;
 
     public String getId() {
         return id;
@@ -62,6 +63,13 @@ public class Professor {
     }
     public void setGrade(int grade) {
         this.grade = grade;
+    }
+
+    public String getalunoId() {
+        return alunoId;
+    }
+    public void setalunoId(String alunoid) {
+        this.alunoId = alunoId;
     }
     
 }

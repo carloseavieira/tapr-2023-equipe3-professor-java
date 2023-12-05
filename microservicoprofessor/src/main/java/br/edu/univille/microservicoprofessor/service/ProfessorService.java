@@ -7,5 +7,8 @@ import br.edu.univille.microservicoprofessor.entity.Professor;
 public interface ProfessorService {
 
     public List<Professor> getAll();
+    Professor create(Professor professor);
+    Professor update(String id, Professor professor);
+    public Professor delete(String id);
     
 }

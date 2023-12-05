@@ -6,3 +6,6 @@
 # az login -u carlos.eduardo.de.almeida.vieira@univille.br
 
 # https://turbo-telegram-gvgv66gpr7r3vgjv-8080.app.github.dev/swagger-ui/index.html
+
+# Compila o codigo
+# mvn clean install
